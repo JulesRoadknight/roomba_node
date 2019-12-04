@@ -10,12 +10,15 @@
 # Run
 
 - Navigate to this project in the command-line/terminal
-- Run `node ./libs/app.js`
+- Run `node app.js`
 
 # Tests
 
-- Tested with Jasmine and manual testing
+- Tested with Jasmine and manual feature testing
+- Test input files in spec folder
 - Run tests in project directory with `jasmine`
+- Linted with ESLint
+- Run linter in project directory with `npx eslint ./lib/roomba.js`
 
 # Summary
 
@@ -42,3 +45,19 @@ bottom left corner of those grid positions.
 # MVP
 
 - Takes input from the input.txt file
+- Gets starting position from input
+- Gets dirt patch locations from input
+- Gets driving instructions from input
+- Follows directions where within bounds
+- Keeps count of the times the roomba occupies the same space as a patch of dirt
+
+# Current Version
+
+- MVP achieved
+- Takes input.txt as default argument, but others can be passed in for testing
+- Comes with a default program in case of empty input
+- Assumes the input.txt is valid
+
+# In the Future
+
+- Account for minor validity errors such as duplicate dirt piles
